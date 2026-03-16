@@ -29,17 +29,17 @@ function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f8fafc] px-4">
       {/* Background Decorative Circles */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-indigo-100 rounded-full blur-3xl opacity-60 animate-pulse"></div>
+      <div className="absolute top-20 left-20 w-64 h-64 bg-[#F27115] rounded-full blur-3xl opacity-60 animate-pulse"></div>
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-60"></div>
 
       <div className="relative bg-white/80 backdrop-blur-md border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2.5rem] p-10 w-full max-w-md transition-all">
         
         <div className="text-center mb-10">
-          <div className="inline-block bg-indigo-600 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+          <div className="inline-block bg-[#F27115] text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
             Admin Portal
           </div>
           <h2 className="text-4xl font-black text-gray-900 tracking-tight">
-            Bynix<span className="text-indigo-600">.</span>
+            Bynix<span className="text-[#F27115]">.</span>
           </h2>
           <p className="text-gray-500 mt-2 font-medium">Please enter your details</p>
         </div>
@@ -59,7 +59,7 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full bg-gray-50/50 border border-gray-200 p-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all placeholder:text-gray-400"
+              className="w-full bg-gray-50/50 border border-gray-200 p-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-[#F27115]/10 focus:border-[#F27115] transition-all placeholder:text-gray-400"
             />
           </div>
 
@@ -71,17 +71,17 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full bg-gray-50/50 border border-gray-200 p-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all placeholder:text-gray-400"
+              className="w-full bg-gray-50/50 border border-gray-200 p-4 rounded-2xl focus:outline-none focus:ring-4 focus:ring-[#F27115]/10 focus:border-[#F27115] transition-all placeholder:text-gray-400"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-4 rounded-2xl font-bold text-white shadow-lg shadow-indigo-200 transition-all active:scale-[0.98] ${
+            className={`w-full py-4 rounded-2xl font-bold text-white shadow-lg shadow-[#F27115] transition-all active:scale-[0.98] ${
               loading 
-                ? "bg-indigo-400 cursor-not-allowed" 
-                : "bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-300"
+                ? "bg-[#F27115] cursor-not-allowed" 
+                : "bg-[#F27115] hover:bg-[#F27115] hover:shadow-[#F27115]"
             }`}
           >
             {loading ? (

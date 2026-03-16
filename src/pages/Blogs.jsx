@@ -483,7 +483,7 @@ function Blogs() {
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700 ml-1">Blog Title</label>
                 <input
-                  className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.title ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-indigo-500/10 focus:border-indigo-500 outline-none"}`}
+                  className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.title ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-[#F27115]/10 focus:border-[#F27115] outline-none"}`}
                   placeholder="Enter title"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
@@ -494,7 +494,7 @@ function Blogs() {
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700 ml-1">Category</label>
                 <input
-                  className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.category ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-indigo-500/10 focus:border-indigo-500 outline-none"}`}
+                  className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.category ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-[#F27115]/10 focus:border-[#F27115] outline-none"}`}
                   placeholder="e.g. Technology"
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
@@ -507,7 +507,7 @@ function Blogs() {
               <label className="text-sm font-bold text-gray-700 ml-1">Short Excerpt</label>
               <textarea
                 rows="2"
-                className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.excerpt ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-indigo-500/10 focus:border-indigo-500 outline-none"}`}
+                className={`w-full bg-gray-50 border p-4 rounded-2xl focus:ring-4 transition-all ${errors.excerpt ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-[#F27115]/10 focus:border-[#F27115] outline-none"}`}
                 placeholder="Brief summary for cards..."
                 value={excerpt}
                 onChange={(e) => setExcerpt(e.target.value)}
@@ -524,16 +524,16 @@ function Blogs() {
             </div>
 
             {/* SEO Section */}
-            <div className="bg-indigo-50/50 p-6 rounded-[1.5rem] border border-indigo-100 space-y-4">
-              <h3 className="text-sm font-black uppercase tracking-widest text-indigo-400">SEO Optimization</h3>
+            <div className="bg-indigo-50/50 p-6 rounded-[1.5rem] border border-[#F27115] space-y-4">
+              <h3 className="text-sm font-black uppercase tracking-widest text-[#F27115]">SEO Optimization</h3>
               <input
-                className="w-full bg-white border border-gray-200 p-4 rounded-xl outline-none focus:border-indigo-400"
+                className="w-full bg-white border border-gray-200 p-4 rounded-xl outline-none focus:border-[#F27115]"
                 placeholder="Meta Title"
                 value={metaTitle}
                 onChange={(e) => setMetaTitle(e.target.value)}
               />
               <textarea
-                className="w-full bg-white border border-gray-200 p-4 rounded-xl outline-none focus:border-indigo-400"
+                className="w-full bg-white border border-gray-200 p-4 rounded-xl outline-none focus:border-[#F27115]"
                 placeholder="Meta Description"
                 value={metaDescription}
                 onChange={(e) => setMetaDescription(e.target.value)}
@@ -556,7 +556,7 @@ function Blogs() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex-1 sm:flex-none bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-indigo-700 shadow-lg shadow-indigo-100 transition-all active:scale-95 disabled:opacity-50"
+                  className="flex-1 sm:flex-none bg-[#F27115] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#F27115] shadow-lg shadow-[#F27115] transition-all active:scale-95 disabled:opacity-50"
                 >
                   {submitting ? "Saving..." : editingId ? "Update Post" : "Publish Blog"}
                 </button>
@@ -590,7 +590,7 @@ function Blogs() {
                   <div key={blog._id} className="group flex items-start gap-4 p-4 rounded-2xl border border-transparent hover:border-gray-100 hover:bg-gray-50 transition-all">
                     <img src={blog.imageUrl || "/placeholder.png"} className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-xl shadow-sm" alt="blog" />
                     <div className="flex-1 min-w-0">
-                      <span className="text-[10px] font-black uppercase text-indigo-500 tracking-wider">{blog.category}</span>
+                      <span className="text-[10px] font-black uppercase text-[#F27115] tracking-wider">{blog.category}</span>
                       <h3 className="font-bold text-gray-900 truncate text-sm md:text-base">{blog.title}</h3>
                       <div className="flex gap-3 mt-3">
                         <button onClick={() => startEdit(blog)} className="text-xs font-bold text-amber-600 hover:underline">Edit</button>

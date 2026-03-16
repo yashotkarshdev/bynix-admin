@@ -110,7 +110,7 @@ function AdminLayout({ children }) {
       `}>
         <div className="h-full flex flex-col">
           {/* Logo Section */}
-          <div className="p-6 text-2xl font-black border-b border-gray-800 tracking-tighter text-indigo-400">
+          <div className="p-6 text-2xl font-black border-b border-gray-800 tracking-tighter text-[#F27115]">
             Bynix Admin
           </div>
 
@@ -128,7 +128,7 @@ function AdminLayout({ children }) {
                 onClick={() => setIsOpen(false)} // Mobile par link click hone pe sidebar band ho jaye
                 className={`flex items-center gap-3 p-3 rounded-xl font-semibold transition-all ${
                   isActive(item.path) 
-                    ? "bg-indigo-600 text-white shadow-lg shadow-indigo-900/20" 
+                    ? "bg-[#F27115] text-white shadow-lg shadow-[#F27115]/20" 
                     : "text-gray-400 hover:bg-gray-800 hover:text-white"
                 }`}
               >

@@ -54,7 +54,7 @@ function Dashboard() {
         {/* Team Card */}
         <div className="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center space-x-4 mb-4">
-            <div className="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
+            <div className="bg-[#F27115] text-[#F27115] w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
               👤
             </div>
             <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Team</h3>
@@ -64,7 +64,7 @@ function Dashboard() {
           </p>
           <Link
             to="/team"
-            className="mt-6 flex items-center text-sm font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
+            className="mt-6 flex items-center text-sm font-bold text-[#F27115] hover:text-[#F27115] transition-colors"
           >
             Manage Members <span className="ml-2">→</span>
           </Link>

@@ -541,7 +541,7 @@ function Team() {
                 <label className="block text-sm font-bold text-gray-700 mb-2 ml-1">Full Name</label>
                 <input
                   className={`w-full bg-gray-50 border p-3 md:p-4 rounded-xl md:rounded-2xl focus:outline-none focus:ring-4 transition-all ${
-                    errors.name ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-indigo-500/10 focus:border-indigo-500"
+                    errors.name ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-[#F27115]/10 focus:border-[#F27115]"
                   }`}
                   placeholder="e.g. Yash"
                   value={name}
@@ -554,7 +554,7 @@ function Team() {
                 <label className="block text-sm font-bold text-gray-700 mb-2 ml-1">Role / Designation</label>
                 <input
                   className={`w-full bg-gray-50 border p-3 md:p-4 rounded-xl md:rounded-2xl focus:outline-none focus:ring-4 transition-all ${
-                    errors.role ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-indigo-500/10 focus:border-indigo-500"
+                    errors.role ? "border-red-500 focus:ring-red-500/10" : "border-gray-200 focus:ring-[#F27115]/10 focus:border-[#F27115]"
                   }`}
                   placeholder="e.g. Frontend Developer"
                   value={role}
@@ -587,7 +587,7 @@ function Team() {
                 <button
                   disabled={submitting}
                   className={`w-full py-3 md:py-4 rounded-xl md:rounded-2xl font-bold text-white transition-all active:scale-95 ${
-                    submitting ? "bg-indigo-300 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700 shadow-lg shadow-indigo-100"
+                    submitting ? "bg-[#F27115] cursor-not-allowed" : "bg-[#F27115] hover:bg-[#F27115] shadow-lg shadow-[#F27115]"
                   }`}
                 >
                   {submitting ? "Processing..." : editingId ? "Update Member" : "Save Member"}
@@ -639,12 +639,12 @@ function Team() {
                                 />
                                 <div className="flex flex-col">
                                   <span className="font-bold text-gray-900 text-sm md:text-base leading-tight">{team.name}</span>
-                                  <span className="text-[10px] font-bold text-indigo-500 uppercase sm:hidden mt-1">{team.role}</span>
+                                  <span className="text-[10px] font-bold text-[#F27115] uppercase sm:hidden mt-1">{team.role}</span>
                                 </div>
                               </div>
                             </td>
                             <td className="py-4 border-y border-transparent group-hover:border-gray-100 hidden sm:table-cell">
-                              <span className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-tight">
+                              <span className="bg-indigo-50 text-[#F27115] px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-tight">
                                 {team.role}
                               </span>
                             </td>

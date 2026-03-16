@@ -44,7 +44,7 @@ function Inquiries() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="bg-white p-6 rounded-[1.5rem] border border-gray-100 shadow-sm">
           <p className="text-gray-400 text-xs font-bold uppercase tracking-widest">Total Inquiries</p>
-          <p className="text-2xl font-black text-indigo-600">{inquiries.length}</p>
+          <p className="text-2xl font-black text-[#F27115]">{inquiries.length}</p>
         </div>
       </div>
 
