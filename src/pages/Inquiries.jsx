@@ -89,7 +89,7 @@ function Inquiries() {
                         </span>
                       </td>
                       <td className="px-6 py-5">
-                        <p className="text-sm text-gray-600 max-w-xs truncate lg:whitespace-normal">
+                        <p className="text-sm text-gray-600  truncate lg:whitespace-normal">
                           {item.message}
                         </p>
                       </td>

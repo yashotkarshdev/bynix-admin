@@ -115,11 +115,6 @@ function Dashboard() {
         </div>
 
       </div>
-
-      {/* Decorative Background Element (Optional) */}
-      <div className="hidden lg:block absolute top-0 right-0 -z-10 opacity-5">
-        <div className="w-96 h-96 bg-gray-200 rounded-full blur-3xl -mr-20 -mt-20"></div>
-      </div>
     </div>
   );
 }
