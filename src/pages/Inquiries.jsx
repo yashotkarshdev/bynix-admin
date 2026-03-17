@@ -62,6 +62,7 @@ function Inquiries() {
                   <th className="px-6 py-5">Client Info</th>
                   <th className="px-6 py-5">Business</th>
                   <th className="px-6 py-5">Message</th>
+                  <th className="px-6 py-5">Source</th>
                   <th className="px-6 py-5">Date</th>
                   <th className="px-6 py-5 text-right">Action</th>
                 </tr>
@@ -91,6 +92,11 @@ function Inquiries() {
                       <td className="px-6 py-5">
                         <p className="text-sm text-gray-600  truncate lg:whitespace-normal">
                           {item.message}
+                        </p>
+                      </td>
+                      <td className="px-6 py-5">
+                        <p className="text-sm text-gray-600  truncate lg:whitespace-normal">
+                          {item.source}
                         </p>
                       </td>
                       <td className="px-6 py-5">
